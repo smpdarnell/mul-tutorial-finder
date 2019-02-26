@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Search{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form>
+    Subreddit:<br>
+    <select name="subs" multiple>
+    {% for subreddit in subreddits%}
+    
+	<option value="{{subreddit}}">{{subreddit}}</option>
+      
+    {% endfor%}
+    </select><br>
+    Search terms:<br>
+    <input type="text" name="searchterms"<br>
+
+  </form>
+{% endblock %}

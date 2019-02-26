@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Results{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% for post in posts %} 
+    <p>{{post.title}}\t{{post.permalink}}</p>
+  {% endfor %}
+{% endblock %}

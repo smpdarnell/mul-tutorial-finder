@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+ <h1>{% block title %}Error{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+ <h2> Oops! There was an issue: {{message}}</h2>
+ <h2><a href ="{{url_for('tutorialFinder.findTutorials')}}">New Search</a>
+ {% endblock %}
+
