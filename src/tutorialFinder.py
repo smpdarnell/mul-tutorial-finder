@@ -18,7 +18,7 @@ bp = Blueprint('tutorialFinder', __name__)
 reddit = praw.Reddit(client_id='TgY85H8sbIQ1Cw', client_secret='2h3wwLLS-J2FlqCXk0IxgioCnlI', user_agent='MUL Tutorial Finder 0.1')
 
 subredditList = ['makeuplounge', 'makeupaddiction']
-subredditFlairs = {'makeuplounge': 'Technique/Tutorial', 'makeupaddition': 'Tutorial'}
+subredditFlairs = {'makeuplounge': 'Technique/Tutorial', 'makeupaddiction': 'Tutorial'}
 
 def findTutorial(sub, flair, product):
     subreddit = reddit.subreddit(sub)
@@ -34,10 +34,10 @@ def findTutorial(sub, flair, product):
         for comment in authorComments:
             if product.lower() in comment.body.lower():
                 matchingPosts.append(submission)
-                print('length: ', len(matchingPosts))
+
                 print ("Title: ", submission.title)
-                print ("Link: ", submission.permalink)
-                print ("Score: ", submission.score)
+                print(submission.preview.get('images')[0].get('source').get('url'))
+                #print(vars(submission.preview.get('images')[0]))
                 print ("---------------------------------\n")
                 break
     
@@ -74,7 +74,6 @@ def findTutorials():
             allMatchingPosts.extend(findTutorial(sub, subredditFlairs[sub], terms))
         except BadRequest:
             render_template('error.html', message='Bad request - check https://reddit.statuspage.io/')
-
     print('Found ', len(allMatchingPosts), ' total posts')
     return render_template('tutorialFinder/results.html', posts = allMatchingPosts)
     

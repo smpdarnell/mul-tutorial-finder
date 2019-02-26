@@ -6,6 +6,7 @@
 
 {% block content %}
   {% for post in posts %} 
-    <p>{{post.title}}\t{{post.permalink}}</p>
+  <h2><a href="reddit.com{{post.permalink}}">{{post.title}}</a></h2>
+	<img style='height: 100%; width: 100%; object-fit: contain' src="{{post.preview.get('images')[0].get('source').get('url')}}">
   {% endfor %}
 {% endblock %}
