@@ -24,7 +24,10 @@ def findTutorial(sub, flair, product):
     subreddit = reddit.subreddit(sub)
     flair = "flair:" + flair
     matchingPosts = []
-    for submission in subreddit.search(query=flair, sort='top', time_filter='all'):
+    submissions = subreddit.search(query=flair, sort = 'top', time_filter='all')
+    #print('searching ' , len(submissions), ' submissions')
+    print(vars(submissions))
+    for submission in submissions:
         author = submission.author
         authorComments = [comment for comment in submission.comments.list() if comment.author == author and  comment.is_root]
         
