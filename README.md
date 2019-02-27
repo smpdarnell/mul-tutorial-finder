@@ -8,6 +8,7 @@ Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the 
 	1. Enter the directory the repo cloned into
 	2. Open the repo's directory in a command prompt/console
 	3. Create and activate the vitual environment 
+		
 		Linux:
 		```
 		python3 -m venv venv
@@ -24,6 +25,7 @@ Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the 
 	pip install praw
 	```
 5. Create environment variables & run
+	
 	Linux: 
 	```
 	export FLASK_APP=src
@@ -46,7 +48,7 @@ Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the 
 - create db of pallettes, search by every shade in the palette if the palette is the search term
 - allow users to create profiles where they can save their favorite products, implement a roullette wheel that picks product and finds a tutorial
 
-Suggestions? Let me know!
+Suggestions? Critiques? More use cases? Let me know!
 
 
-Made possible by: [Flask](http://flask.pocoo.org/docs/1.0/#) and [Python Reddit API Wrapper](https://praw.readthedocs.io/en/latest/index.html)
+Made possible by [Flask](http://flask.pocoo.org/docs/1.0/#) and [Python Reddit API Wrapper](https://praw.readthedocs.io/en/latest/index.html)
