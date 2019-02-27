@@ -5,9 +5,8 @@ Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the 
 1. Have python 3 installed on your system. Check [here](https://www.python.org/downloads/) for downloads/instructions. I was using Python 3.6.7 during development.
 2. Clone the repo
 3. Create the virtual environment for the project 
-	1. Enter the directory the repo cloned into
-	2. Open the repo's directory in a command prompt/console
-	3. Create and activate the vitual environment 
+	1. Open the repo's directory in a command prompt/console
+	2. Create and activate the vitual environment 
 		
 		Linux:
 		```
