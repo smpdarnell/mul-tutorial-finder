@@ -1,5 +1,5 @@
 # mul-tutorial-finder
-Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the [Flask Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/factory/)
+Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the [Flask Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/factory/). Note: Sign in/Register is only partially implemented.
 
 ## Installation
 1. Have python 3 installed on your system. Check [here](https://www.python.org/downloads/) for downloads/instructions. I was using Python 3.6.7 during development.
