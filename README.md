@@ -37,6 +37,8 @@ Find tutorials on /r/MakeupLounge by product. UI almost exactly the UI from the 
 	$env:FLASK_ENV = "development"
 	flask run
 	```
+6. visit localhost:5000 to try it out
+
 ## Future Plans
 - add loading screen when fetching tutorials and looking for matches
 - allow user to pick the sort of the search (right now it sorts by 'top', but reddit offers other options)
